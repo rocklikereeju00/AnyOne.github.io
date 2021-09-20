@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Jquery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="styles.css">
+
+        <title></title>
+    </head>
+    <body>
+
+        <!-- Search bar css -->
+
+        <style>
+            body {
+background: #e8eaed
+}
+
+.container {
+max-width: 600px;
+/* margin: 50px auto */
+}
+
+.searchbar {
+position: relative;
+min-width: 50px;
+width: 0%;
+height: 50px;
+float: right;
+overflow: hidden;
+-webkit-transition: width 0.3s;
+-moz-transition: width 0.3s;
+-ms-transition: width 0.3s;
+-o-transition: width 0.3s;
+transition: width 0.3s
+}
+
+.searchbar-input {
+top: 0;
+right: 0;
+border: 0;
+outline: 0;
+/* background: #069C54; */
+/* background:#a4a7ab; */
+width: 100%;
+height: 50px;
+margin: 0;
+/* padding: 0px 55px 0px 20px; */
+font-size: 20px;
+color: #069C54;
+
+border:2px solid #069C54;
+}
+
+.searchbar-input::-webkit-input-placeholder {
+color: #069C54
+}
+
+.searchbar-input:-moz-placeholder {
+color: #069C54
+}
+
+.searchbar-input::-moz-placeholder {
+color: #069C54
+}
+
+.searchbar-input:-ms-input-placeholder {
+color: #069C54
+}
+
+.searchbar-icon,
+.searchbar-submit {
+width: 50px;
+height: 50px;
+display: block;
+position: absolute;
+top: 0;
+font-family: verdana;
+font-size: 22px;
+right: 0;
+padding: 0;
+margin: 0;
+border: 0;
+outline: 0;
+line-height: 50px;
+text-align: center;
+cursor: pointer;
+color: #fff;
+background: #069C54;
+border-left: 1px solid white
+}
+
+.searchbar-open {
+width: 100%
+}
+
+
+
+</style>
+<!-- end  search bar css     -->
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+       
+    
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <div class="d-flex justify-content-between mt-2 mb-2 shadow p-2 upperbox">
+         
+        <div id="logo">
+           <a href="/" style="font-size: 30px;"> AnyOne</a>
+        </div>
+        <!-- search sectio -->
+        <!-- <div class="serachb">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+              </form>
+        </div> -->
+
+            
+    <div class="container">
+        <form class="searchbar"> 
+            
+            <input type="search" placeholder="Search here" name="search" class="searchbar-input" onkeyup="buttonUp();" required>
+            <input type="submit" class="searchbar-submit" value="GO"> 
+            <span class="searchbar-icon">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </span> 
+        </form>
+    </div>
+
+
+        <!-- end search section  -->
+        <div>
+            
+            <a class="btn btn-outline-success" href="#" role="button">Login</a>
+            
+            
+        </div>
+
+
+        <div class="nav__toggle" id="nav-toggle">
+                    
+            <i class='bx bx-menu'></i>
+        </div> 
+        </div>    
+            <nav class="nav bd-container">
+                
+                <a href="" class="nav__logo">Welcome</a>
+                <!-- <li><i class='bx bx-moon change-theme' id="theme-button"></i></li> -->
+                
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+                        
+
+                        
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                 
+                       
+                        <li class="nav__item"><a href="#about" class="nav__link">cat</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">category1</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">cat-3</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Cat-4</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Cat-5</a></li>
+
+                        
+                    </ul>
+                </div>
+               
+               
+                
+            </nav>
+        </header>
+
+        
+        
+        <!-- ======== Login Form ================= -->
+
+      <style>
+      
+        </style>
+
+
+<script>
+
+</script>
+
+  
+
+   
+    
+
+
+<style>
+
+	.lookbook-gallery
+	.a11y-only {
+  box-sizing: border-box;
+	  border: 0;
+	  clip: rect(0 0 0 0);
+	  height: 1px;
+	  margin: 2px;
+	  overflow: hidden;
+	  padding: 2px;
+	  position: absolute;
+	  width: 1px;
+	  float: none;
+	}
+
+	.a11y-only.focusable:active,
+	.a11y-only.focusable:focus {
+  box-sizing: border-box;
+	  clip: auto;
+	  height: auto;
+	  margin: 0;
+	  overflow: visible;
+	  position: static;
+	  width: auto;
+	}
+
+	img {
+	  min-width: 2em;
+	  max-width: 100%;
+	  display: block;
+	}
+
+	.model {
+	  margin: 0;
+	  position: relative;
+	}
+
+
+	@media (min-width: 10em) {
+		 .lookbook-grid {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.lookbook-grid1 {
+				display: flex;
+				flex-wrap: wrap;
+		}
+
+		.model {
+			flex: 47.5%;
+			margin: 0.5%;
+		}
+	}
+
+	@media (min-width: 10em) {
+
+	  .model {
+		flex: 24.25% 0;
+		margin: 0.25%;
+	  }
+
+	  @supports (display: grid) {
+		.lookbook-grid {
+		  display: grid;
+		  grid-gap: 0.5em;
+		  grid-template-columns: repeat(4, minmax(10px, 1fr));
+		}
+		.lookbook-grid1 {
+			display: grid;
+			grid-gap: 0.5em;
+			grid-template-columns: minmax(10px, 1fr) 1fr 1fr 1fr;
+		}
+		.model {
+		  margin: 0;
+		}
+		.lookbook-grid .model:nth-of-type(4n-1) {
+		  grid-row-end: span 2;
+		  grid-column-end: span 2;
+		}
+		.lookbook-grid1 .model:nth-of-type(1) {
+		  grid-row-end: span 2;
+		  grid-column-end: span 2;
+		}
+	  }
+	}
+
+
+
+   .model figcaption {
+	position: absolute;
+	bottom:0;
+	left:0;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	/* color: white; */
+	font-size:18px;
+	font-weight: bold;
+	text-align: center;
+	border-radius:5px;
+	text-shadow: 2px 1px 30px rgba(142, 89, 245, 1);
+	/* background: rgba(0, 0, 0, 0.6); */
+  }
+
+  /*li {
+	  float: left;
+	  padding: 2px;
+	  }*/
+	  /* carouselExampleCaptions */
+
+	  .crs{
+		  margin-top:125px;
+	  }
+
+</style>
+      
+
+<!-- slider container -->
+
+<div id="carouselExampleCaptions" class="carousel slide crs" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://devloper9752.pythonanywhere.com/static/slide_img/portfolio-details-1.jpg" class="d-block w-100" alt="...">
+         
+        </div>
+        <div class="carousel-item">
+          <img src="https://devloper9752.pythonanywhere.com/static/slide_img/portfolio-details-2.jpg" class="d-block w-100" alt="...">
+          
+        </div>
+        <div class="carousel-item">
+          <img src="https://devloper9752.pythonanywhere.com/static/slide_img/portfolio-details-3.jpg" class="d-block w-100" alt="...">
+          <!-- <style>
+            video {
+              width: 100%;
+              height: auto;
+            }
+            </style>
+          <video width="400" controls autoplay>
+            <source src="/static/design2/video/video.mp4" type="video/mp4">
+          
+          </video> -->
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+	
+
+	
+	<!-- Main COntent Product -->
+
+	<div class="lookbook-gallery">
+
+	  <div class="lookbook-grid" role="region">
+		<figure class="mt-3 shadow model">
+		  <img src="https://assets.codepen.io/t-1869/fridays.png" />
+		  <!-- <figcaption>New Stylish Product  </figcaption> -->
+		</figure>
+
+		<figure class="mt-3 shadow model">
+		  <img src="https://assets.codepen.io/t-1869/fridays.png" />
+		  <!-- <figcaption>New Stylish Product  </figcaption> -->
+		</figure>
+
+		<figure class="mt-3 shadow model">
+		  <img src="https://assets.codepen.io/t-1869/fridays.png" />
+		  <!-- <figcaption>New Stylish Product  </figcaption> -->
+		</figure>
+
+		<figure class="mt-3 shadow model">
+		  <img src="https://assets.codepen.io/t-1869/fridays2.png" />
+		  <!-- <figcaption>New Stylish Product  </figcaption> -->
+		</figure>
+
+		<figure class="mt-3 shadow model">
+		  <img src="https://assets.codepen.io/t-1869/fridays.png" />
+		  <!-- <figcaption>New Stylish Product  </figcaption> -->
+		</figure>
+
+	</div>
+
+	<div class="lookbook-grid1" role="region">
+
+	  <figure class="mt-3 shadow model">
+		<img src="https://assets.codepen.io/t-1869/fridays.png" />
+		<!-- <figcaption>New Stylish Product  </figcaption> -->
+	  </figure>
+
+	  <figure class="mt-3 shadow model">
+		<img src="https://assets.codepen.io/t-1869/fridays.png" />
+		<!-- <figcaption>New Stylish Product  </figcaption> -->
+	  </figure>
+
+	  <figure class="mt-3 shadow model">
+		<img src="https://assets.codepen.io/t-1869/fridays.png" />
+		<!-- <figcaption>New Stylish Product  </figcaption> -->
+	  </figure>
+
+	  <figure class="mt-3 shadow model">
+		<img src="https://assets.codepen.io/t-1869/fridays2.png" />
+		<!-- <figcaption>New Stylish Product  </figcaption> -->
+	  </figure>
+
+	  <figure class="mt-3 shadow model">
+		<img src="https://assets.codepen.io/t-1869/fridays.png" />
+		<!-- <figcaption>New Stylish Product  </figcaption> -->
+	  </figure>
+
+	</div>
+ 
+
+
+<div class="responsive"> </div>
+  
+        <main class="l-main">
+
+          
+
+     </main>
+
+    </body>
+</html>
+
+
+
+   <!--========== FOOTER ==========-->
+   <footer class="footer section bd-container">
+    <div class="footer__container bd-grid">
+        <div class="footer__content">
+            <a href="#" class="footer__logo">Website</a>
+            <span class="footer__description">Service name</span>
+            <div>
+                <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__title">Services</h3>
+            <ul>
+                <li><a href="#" class="footer__link">Product</a></li>
+                <li><a href="#" class="footer__link">Compersion</a></li>
+                <li><a href="#" class="footer__link">Categories</a></li>
+                <li><a href="#" class="footer__link">listed</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__title">Information</h3>
+            <ul>
+                <li><a href="#" class="footer__link">About Us</a></li>
+                <li><a href="#" class="footer__link">Contact us</a></li>
+                <li><a href="#" class="footer__link">Privacy policy</a></li>
+                <li><a href="#" class="footer__link">Terms of services</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__title">Adress</h3>
+            <ul>
+                <li>Somewhere India</li>
+                <li> Developer</li>
+                <li>+91 8145523083</li>
+                <li>avijitsahoo.hello.world@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="footer__copy">&#169; 2021-22  All right reserved</p>
+</footer>
+
+<!--========== SCROLL REVEAL ==========-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--========== MAIN JS ==========-->
+<script src="/static/design/assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<!-- script for serach bar -->
+
+<script>
+$(document).ready(function(){
+var submitIcon = $('.searchbar-icon');
+var inputBox = $('.searchbar-input');
+var searchbar = $('.searchbar');
+var isOpen = false;
+submitIcon.click(function(){
+if(isOpen == false){
+searchbar.addClass('searchbar-open');
+inputBox.focus();
+isOpen = true;
+} else {
+searchbar.removeClass('searchbar-open');
+inputBox.focusout();
+isOpen = false;
+}
+});
+submitIcon.mouseup(function(){
+return false;
+});
+searchbar.mouseup(function(){
+return false;
+});
+$(document).mouseup(function(){
+if(isOpen == true){
+$('.searchbar-icon').css('display','block');
+submitIcon.click();
+}
+});
+});
+function buttonUp(){
+    document.getElementById('#logo').style.display = 'none';
+// document.getElementById('#logo').style.display='none';
+var inputVal = $('.searchbar-input').val();
+inputVal = $.trim(inputVal).length;
+if( inputVal !== 0){
+$('.searchbar-icon').css('display','none');
+} else {
+$('.searchbar-input').val('');
+$('.searchbar-icon').css('display','block');
+}
+}
+</script>
+<!--  end of  serach bar  script -->
+</body>
+</html>
